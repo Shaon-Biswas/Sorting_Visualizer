@@ -58,10 +58,10 @@ void bubbleSort(vector<int>& v)
 
 void selectionSort(vector<int>& v)
 {
-    for(i=0;i<=v.size()-2;i++)
+    for(int i=0;i<=v.size()-2;i++)
     {
         int min=i;
-        for(j=i;j<=v.size()-1;j++)
+        for(int j=i;j<=v.size()-1;j++)
         {
             if(v[j]<v[min])
             {
@@ -106,12 +106,23 @@ void insertionSort(vector<int>& v)
         SDL_Delay(10);
     }
 }
+void mergeSort(vector<int>v)
+{
+    
+}
+
+void quickSort(vector<int>v)
+{
+    
+}
+
 
 int main()
 {
     random_device rd;
     uniform_int_distribution d(1,99);
     vector<int>v;
+    int n;
     for(int i=0;i<100;i++)
     {
         v.push_back(d(rd));
